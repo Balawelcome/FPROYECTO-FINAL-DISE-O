@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f4f8; /* Color de fondo más claro */
+    font-family: 'Verdana', sans-serif; /* Cambio de fuente */
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+
+.hero h1 {
+    font-size: 80px; /* Tamaño de fuente más grande */
+    color: #2c3e50; /* Nuevo color de texto */
+}
+
+.hero p {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #555; /* Color de texto más suave */
+}
+
+nav {
+    background: #61a5c2; /* Nuevo color de navegación */
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; /* Sombra más suave */
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a {
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Color blanco para el texto */
+    transition: .2s ease-in-out all;
+    font-weight: 700; /* Aumentar peso de la fuente */
+}
+
+nav a:hover {
+    background: #4ca1af; /* Color de fondo al pasar el ratón */
+}
+
+nav .indicator {
+    width: 0px;
+    height: 5px;
+    background: #61a5c2;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+}
+
+.seccion {
+    min-height: 100vh;
+    max-width: 900px; /* Aumento de ancho máximo */
+    width: 90%;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion .card {
+    background: #f8f9fa; /* Color de tarjeta más claro */
+    height: 90%;
+    padding: 50px; /* Aumento de padding */
+    border-radius: 10px; /* Esquinas más redondeadas */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px; /* Sombra más suave */
+}
+
+.seccion h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1d1d1d; /* Color de encabezado más oscuro */
+}
+
+.seccion p {
+    line-height: 26px; /* Aumento de línea */
+    margin-bottom: 40px;
+    color: #4b4b4b; /* Color de texto más claro */
+}
+
+.seccion img {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 16px; /* Aumento de tamaño de fuente */
+        padding: 10px; /* Aumento de padding */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a {
+        font-size: 14px; /* Ajuste para móviles */
+    }
+}
